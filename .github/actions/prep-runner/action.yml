@@ -19,10 +19,10 @@ runs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2'
+        ruby-version: "3.2"
         bundler-cache: true # runs 'bundle install' and caches installed gems
 
-    # Configure Bundler to use the global gem path 
+    # Configure Bundler to use the global gem path
     - name: Configure Bundler
       run: |
         bundle config path vendor/bundle
@@ -41,4 +41,3 @@ runs:
       if: ${{ inputs.verify }}
       shell: bash
       run: ${{ inputs.verify }}
-    

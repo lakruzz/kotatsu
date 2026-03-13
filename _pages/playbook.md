@@ -3,8 +3,8 @@ title: playbook
 description: Our way of keeping collaboration hot, focused and tastefully informal.
 permalink: /playbook/
 layout: default
+# cspell:ignore mrtabete rulebooks
 ---
-
 
 ## Playbook
 

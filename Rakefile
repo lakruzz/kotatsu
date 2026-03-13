@@ -50,16 +50,12 @@ namespace :proofer do
         %r{linkedin\.com},
         %r{twitter\.com},
         %r{instagram\.com},
-        %r{devopsdays\.dk},
-        %r{bankdata\.dk},
-        %r{juanherreros\.com},
         %r{medium\.com},
         %r{http:\/\/localhost:},
-        %r{serverless\.ninja},
         %r{meetup\.com},
         %r{googleapis\.com},
         %r{jsdelivr\.com},
-
+        %r{\/tag\/llm\/}
       ]
     }
     

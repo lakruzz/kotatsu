@@ -3,6 +3,7 @@ title: crew
 description: The people who keep the kotatsu warm and the shichirin sizzling.
 permalink: /crew/
 layout: default
+# cspell:ignore engarde mrtabete
 ---
 
 <p class="brand-wrapper">

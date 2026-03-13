@@ -55,7 +55,7 @@ ul li {
 }
 
 #top-nav .sep {
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
   color: #999;
 }
 
@@ -64,7 +64,7 @@ ul li {
 .post-banner img {
   width: 100%;
   height: auto;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -76,11 +76,11 @@ ul li {
   width: 100%;
   max-height: 120px;
   object-fit: cover;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: block;
 }
 .post-card h3 {
-  margin: .8rem 0 .4rem;
+  margin: 0.8rem 0 0.4rem;
 }
 
 /* two–column layout on wide screens */
@@ -93,7 +93,7 @@ ul li {
 .blog-tags {
   flex: 0 0 220px;
   margin-left: auto;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /* post column fills the rest */
@@ -102,7 +102,11 @@ ul li {
 }
 
 /* keep it single-column on small screens */
-@media(max-width:800px){
-  .blog-index   { flex-direction:column; }
-  .blog-tags    { margin-left:0; }
+@media (max-width: 800px) {
+  .blog-index {
+    flex-direction: column;
+  }
+  .blog-tags {
+    margin-left: 0;
+  }
 }

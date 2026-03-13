@@ -4,7 +4,8 @@
     "**/*.md",
     "!node_modules/**",
     "!**/temp/**",
-    "!**/vendor/**"
+    "!**/vendor/**",
+    "!_site/**",
   ],
   "config": {
     "MD001": false,
@@ -20,7 +21,6 @@
     //"MD041": { "allow_preamble": true, "level": 2 },
     "MD038": false,
     "MD041": false,
-    "MD042": false
-
-  }
+    "MD042": false,
+  },
 }

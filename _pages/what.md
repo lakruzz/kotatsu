@@ -3,6 +3,7 @@ title: concepts
 description: The settings that frame our conversations and craft.
 permalink: /what/
 layout: default
+# cspell: ignore mrtabete yakitori
 ---
 
 ## Tabete

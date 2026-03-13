@@ -4,6 +4,7 @@ description: Quick notes & stories from around the kotatsu.
 permalink: /blog/
 layout: default
 tag: [tabete, kotatsu, shichirin]
+# cspell:ignore mrtabete
 ---
 
 <div class="blog-index">
@@ -26,6 +27,7 @@ tag: [tabete, kotatsu, shichirin]
         </a>
       </article>
     {% endfor %}
+
   </main>
 
   <aside class="blog-tags">

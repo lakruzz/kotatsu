@@ -1,12 +1,13 @@
 ---
-title:  "The debut kotatsu"
+title: "The debut kotatsu"
 description: |
   A quick look back at our first community event.
-date:   2025-12-12
+date: 2025-12-12
 layout: post
-tags:   [tabete, kotatsu, llm]
+tags: [tabete, kotatsu, llm]
 author: thierry
 banner: /assets/banners/cats-cradle.jpg
+# cspell:ignore Isoda Koryusai Ulrik
 ---
 
 ## The debut kotatsu
@@ -21,7 +22,6 @@ It was a grounded delivery far from the evangelical praise and pessimistic dismi
 Between the great presentation and numerous discussions along the way, everyone - enthusiasts and skeptics alike - left more informed and having had a lot of fun.
 
 ![Photo of Ulrik hosting the discussions]({{ '/assets/img/meetups/kotatsu-1.png' | relative_url }})
-
 
 Taking a look at the format; For our debut event, it was everything we had hoped for.
 Our goal with Tabete is to maintain a small community of friends in the industry; people we enjoy regularly talking shop with.

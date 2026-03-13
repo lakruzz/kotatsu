@@ -1,4 +1,5 @@
 ---
+# cspell:ignore eachother
 layout: tag
 tag: shichirin
 title: Posts tagged "shichirin"
