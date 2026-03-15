@@ -12,8 +12,11 @@ on:
 jobs:
   copilot-setup-steps:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: read
+      statuses: write
 
     steps:
       - name: Checkout
@@ -21,6 +24,5 @@ jobs:
 
       - name: Set up runner environment
         uses: ./.github/actions/prep-runner
-
-      - name: test precommit hook
-        run: ./.githooks/pre-commit
+        with:
+          verify: ./.scripts/trunk-worthy

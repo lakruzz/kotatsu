@@ -18,4 +18,4 @@ jobs:
           echo "go to \`.github/workflows/stage.yml\` and fill in the blanks..." >> .stage_deploy_placeholder
 
 # A blank sheet!
-# Excited to see what yopu come up with!
+# Excited to see what you come up with!

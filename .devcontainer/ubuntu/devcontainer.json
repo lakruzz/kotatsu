@@ -8,7 +8,7 @@
       "packages": ["cspell", "markdownlint-cli2", "prettier"]
     },
     "ghcr.io/devcontainers/features/ruby:1": {
-      "version": "3.2"
+      "version": "3.3"
     }
   },
   "customizations": {

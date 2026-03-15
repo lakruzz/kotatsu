@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      JEKYLL_ENV: production
     permissions:
       contents: read
       statuses: write
@@ -20,9 +21,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-
-      - name: Mark pending
-        run: ./.scripts/trunk-worthy mark-pending
 
       - name: Set up runner environment
         uses: ./.github/actions/prep-runner

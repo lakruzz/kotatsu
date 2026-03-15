@@ -64,3 +64,12 @@ namespace :proofer do
   end
 
 end
+
+namespace :fix do
+  desc 'Formatters'
+  task :all do
+    sh 'markdownlint-cli2 --fix'
+    sh 'prettier --write .'
+    puts '✓ Formatting completed!'
+  end
+end

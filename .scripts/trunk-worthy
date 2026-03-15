@@ -60,8 +60,6 @@ declare -A CHECK_COMMANDS=(
     [internallinks]="bundle exec rake proofer:dev"
 )
 
----
-
 # Mapping for display names (optional) No entry means it will just capitalize the name from CHECK_NAMES
 declare -A DISPLAY_NAMES=(
     [cspell]="Code Spell Checker"

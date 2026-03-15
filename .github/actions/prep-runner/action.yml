@@ -10,32 +10,32 @@ runs:
   using: composite
   steps:
     - name: Mark checks as pending
-      env:
-        GH_TOKEN: ${{ github.token }}
-      run: |
-        .scripts/trunk-worthy mark-pending
+      if: ${{ inputs.verify }}
+      shell: bash
+      run: ${{ inputs.verify }} mark-pending
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: "24"
+
+    # Install npm packages required by .githooks/pre-commit
+    - name: Install linting and checker tools
+      shell: bash
+      run: npm install -g cspell markdownlint-cli2 @cspell/dict-da-dk prettier
 
     # Install Ruby, Bundler and all gems from Gemfile.
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: "3.2"
+        ruby-version: "3.3"
         bundler-cache: true # runs 'bundle install' and caches installed gems
 
-    # Configure Bundler to use the global gem path
+    # Configure Bundler to use the global gem path (installed in previous step)
     - name: Configure Bundler
+      shell: bash
       run: |
         bundle config path vendor/bundle
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: "20"
-
-    # Install npm packages required by .githooks/pre-commit
-    - name: Install linting and checker tools
-      shell: bash
-      run: npm install -g cspell markdownlint-cli2 prettier
 
     - name: Verify environment
       if: ${{ inputs.verify }}
