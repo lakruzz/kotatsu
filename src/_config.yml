@@ -20,3 +20,6 @@ collections:
   authors:
     output: true # tells Jekyll to publish the files
     permalink: /author/:name/
+  events:
+    output: true
+    permalink: /events/:name/

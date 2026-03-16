@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="event">
+  {% if page.header_image %}
+  <figure class="event-banner">
+    <img
+      src="{{ page.header_image | relative_url }}"
+      alt="{{ page.title }} banner"
+    />
+  </figure>
+  {% endif %}
+
+  <p class="event-meta">
+    {% if page.date %}
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%-d %B %Y" }}
+    </time>
+    {% endif %} {% if page.venue %} &nbsp;◈&nbsp;
+    <span class="event-venue">{{ page.venue }}</span> {% endif %} {% if
+    page.speaker %} &nbsp;◈&nbsp;
+    <span class="event-speaker">{{ page.speaker }}</span>
+    {% endif %}
+  </p>
+
+  <div class="event-body">{{ content }}</div>
+
+  {% if page.signup_link %}
+  <p class="event-signup">
+    <a
+      href="{{ page.signup_link }}"
+      class="event-signup-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Sign up &rarr;</a
+    >
+  </p>
+  {% endif %}
+</article>
