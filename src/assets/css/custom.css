@@ -110,3 +110,93 @@ ul li {
     margin-left: 0;
   }
 }
+
+/* --------------------------------------------------------- */
+/* events listing page */
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-card {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.event-card-thumb {
+  flex: 0 0 160px;
+}
+
+.event-card-thumb img {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.event-card-body {
+  flex: 1 1 auto;
+}
+
+.event-card-body h3 {
+  margin: 0 0 0.4rem;
+}
+
+/* --------------------------------------------------------- */
+/* individual event page */
+.event-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  margin: 0.4rem 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.event-signup {
+  margin-top: 1.5rem;
+}
+
+.event-signup-link {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  background: #c33;
+  color: #fff;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.event-signup-link:hover {
+  background: #a00;
+  text-decoration: none;
+}
+
+/* stack card on small screens */
+@media (max-width: 600px) {
+  .event-card {
+    flex-direction: column;
+  }
+  .event-card-thumb {
+    flex: none;
+    width: 100%;
+  }
+  .event-card-thumb img {
+    width: 100%;
+    height: auto;
+  }
+}
